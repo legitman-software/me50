@@ -1,0 +1,19 @@
+img, input{ /*used to center the page*/
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+div .flex{ /* so it can fit on diffrent screens*/
+    display:flex; /*setting the display to be malable*/
+    flex-wrap:wrap;
+}
+.button button { /*correctly placing the buttons*/
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+    margin-bottom: 1000px;
+  }
+  
