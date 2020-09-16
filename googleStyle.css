@@ -9,13 +9,19 @@ html {
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
     grid-template-rows: 50px;
     grid-template-areas: 
-    "about store . gmail image menu sign-in";
+    "about store . adv gmail image menu sign-in";
     margin: 0 20px 0 10px;
 }
 a{
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color:black;
-    font-size: 15px;
+    font-size: 13px;
+}
+#adv{
+    grid-area:adv;
+    justify-self: flex-end;
+    align-self:center;
 }
 #about {
     grid-area: about;
@@ -52,26 +58,42 @@ a{
 #main{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:200px 70px 70px 200px;
+    grid-template-rows:250px 70px 70px 200px;
     grid-template-areas: 
     ". logo ."
     ". search ."
-    ". google-search-btn ."
+    ". flexbox ."
     ". google-text ."
     ;
 }
 #logo{
-    grid-area: logo
+    grid-area: logo;
+    display:flexbox;
+    justify-self:center;
+    align-self: flex-end;
 }
-#search{
-    grid-area: search
+#search {
+    grid-area: search;
+    height:30px;
+    border-radius: 30px;
+    align-self: center;
 }
 #google-search-btn{
-    grid-area: google-search-btn
+    grid-area: google-search-btn;
 }
 #random-search-btn{
-    grid-area: random-search-btn
+    grid-area: random-search-btn;
 }
 #google-text{
-    grid-area: google-text
+    grid-area: google-text;
+    justify-self: center;
 }
+#flexbox{
+    display:flexbox;
+    grid-area:flexbox;
+    justify-self: center;
+    align-self:center;
+}
+
+
+
