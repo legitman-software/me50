@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+    min-height: 100%;
+}
 img, input{ /*used to center the page*/
     display:block;
     margin-left:auto;
@@ -7,13 +11,34 @@ div .flex{ /* so it can fit on diffrent screens*/
     display:flex; /*setting the display to be malable*/
     flex-wrap:wrap;
 }
-.button button { /*correctly placing the buttons*/
-    background-color: #4CAF50; /* Green background */
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    float: left; /* Float the buttons side by side */
-    margin-bottom: 1000px;
-  }
-  
+
+/*Navbar Section*/
+#navBar {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail Image menu sign-in";
+    margin: 0 20px 0 10px;
+}
+
+#bar{
+    align-self: center;
+    justify-self: center;
+    width: 500px;
+}
+
+#searchButtons{
+    display:grid;
+    grid-template-columns: 1fr 100px 50px 1fr;
+    justify-content: center;
+
+}
+
+button{
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+}
+
