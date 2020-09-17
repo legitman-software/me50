@@ -88,10 +88,14 @@ a, p{
     border-radius: 30px;
     justify-self: center;
     align-self: center;
+    outline:none;
 }
 #search:focus{
     box-shadow: 1px 1px 15px grey;
     outline:none;
+}
+#search:hover{
+    box-shadow: 1px 1px 15px grey;
 }
 #google-search-btn{
     grid-area: google-search-btn;
@@ -132,6 +136,3 @@ a, p{
 a:hover{
     text-decoration: underline;
 }
-
-
-
