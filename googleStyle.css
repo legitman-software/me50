@@ -119,9 +119,11 @@ a, p{
 }
 #google-search-btn:hover{
     border: 1px solid rgb(139, 139, 139);
+    color: black;
 }
 #random-search-btn:hover{
     border: 1px solid rgb(139, 139, 139);
+    color: black;
 }
 #google-text{
     grid-area: google-text;
