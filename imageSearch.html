@@ -2,12 +2,23 @@
 <html lang="en">
     <head>
         <title>Image Search</title>
+        <link rel="stylesheet" href="imageStyle.css">
     </head>
     <body>
-        <form action="http://images.google.com/images">
-            <input type="text" name="q">
-            <input type="submit" value="Google Image Search">
-            <button><a href="index.html">Google Search</a></button>
-        </form>
+        <div id="nav"> 
+            <a href="#"id="imgMenu"><img src="menu.png" height="30px" width="30px"></a>
+            <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/%3Fclient%3Dsafari%26channel%3Diphone_bm&ec=GAZAAQ"id="signIn">Sign in</a>
+        </div>
+        <div>
+            <form action="http://images.google.com/images" id="main">
+                <img src="googleImg.png" id="logo">
+                <input type="text" name="q" id="search">
+                <div id="flex">
+                    <input type="submit" value="Google Image Search" id="imageBtn">
+                    <button id="googleBtn"><a href="index.html">Google Search</a></button>
+                </div>
+                <a><p id="google-text">Google offered in: <a href="#" id="English" style="color:blue;">English</a></p></a>
+            </form>
+        </div>
     </body>
 </html>
