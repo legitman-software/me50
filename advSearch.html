@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="advStyle.css">
     </head>
     <body>
-        <div id=navbar>
+        <div id=navi>
             <a href="#" id="logo"><img src="logo.png" height="40px" width="120px"></a>
             <a href="#"id="menu"><img src="menu.png" height="30px" width="30px"></a>
             <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/%3Fclient%3Dsafari%26channel%3Diphone_bm&ec=GAZAAQ"id="signin">Sign in</a>
@@ -15,12 +15,16 @@
         </div>
         <div>
             <form action="https://google.com/search" id=main>
-                <a>All these words:</a><input type="text" name="as_q" >
-                <br><br><a>Exact word/phrase:</a><input type="text" name="as_epq" >
-                <br><br><a>Any of these words:</a><input type="text" name="as_oq" >
-                <br><br><a>None of these words:</a><input type="text" name="as_eq" >
-               <br><br> <input type="submit" value="Advanced Search">
-               <button><a href="index.html">Google Search</a></button>
+                <a id="searchVar1">All these words:</a><input type="text" name="as_q" id="in1">
+                <a id="searchVar2">Exact word or phrase:</a><input type="text" name="as_epq" id="in2">
+                <a id="searchVar3">Any of these words:</a><input type="text" name="as_oq" id="in3">
+                <a id="searchVar4">None of these words:</a><input type="text" name="as_eq" id="in4">
+                <div id="buttons">
+                    <div id="flex">
+                        <button id="google"><a href="index.html" style="text-decoration: none;">Google Search</a></button>
+                        <input type="submit" value="Advanced Search" id="adv">
+                    </div>
+                </div>
              </form>
         </div>
     </body>

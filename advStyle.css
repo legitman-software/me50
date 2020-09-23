@@ -1,13 +1,15 @@
 html{
     height: 100%;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
-#navbar{
+#navi{
 display: grid;
 grid-template-rows: 30px;
-grid-template-columns: 1fr 50px 50px;
+grid-template-columns: 50px 1fr 50px 50px;
 grid-template-areas: 
-"logo image signin"
+"logo . image signin"
 }
 #word{
     display:grid;
@@ -17,20 +19,103 @@ grid-template-areas:
     ". words";
 }
 #logo{
-    grid-template-areas: logo;
+    grid-area: logo;
 }
 #menu{
-    grid-template-areas: image;
+    grid-area: image;
 }
 #signin{
-    grid-template-areas: signin;
-    justify-self: center;
+    grid-area: signin;
+    justify-self: flex-start;
     align-self: center;
+    text-decoration: none;
 }
 #words{
-    grid-template-areas: words;
+    grid-area: words;
     align-self: flex-end;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: #d93025;
+}
+#main{
+    display:grid;
+    grid-template-columns: 50px 200px 500px;
+    grid-template-rows: 50px 50px 50px 50px;
+    margin-top: 25px;
+    grid-template-areas: 
+    ". searchVar1 in1"
+    ". searchVar2 in2"
+    ". searchVar3 in3"
+    ". searchVar4 in4"
+    ;
+}
+#searchVar1{
+    grid-area: searchVar1;
+    align-self: center;
+    font-size: 13px;
+}
+#searchVar2{
+    grid-area: searchVar2;
+    align-self: center;
+    font-size: 13px;
+}
+#searchVar3{
+    grid-area: searchVar3;
+    align-self: center;
+    font-size: 13px;
+}
+#searchVar4{
+    grid-area: searchVar4;
+    align-self: center;
+    font-size: 13px;
+}
+#in1{
+    grid-area:in1;  
+    height:25px;
+    outline: none;
+    align-self:center;
+}
+#in2{
+    grid-area:in2;  
+    height:25px;
+    outline: none;
+    align-self:center;
+}
+#in3{
+    grid-area:in3;  
+    height:25px;
+    outline: none;
+    align-self:center;
+}
+#in4{
+    grid-area:in4;  
+    height:25px;
+    outline: none;
+    align-self:center;
+}
+#buttons{
+    display:grid;
+    grid-template-rows: 260px;
+    grid-template-columns: 750px;
+    grid-template-areas: 
+    "flex";
+}
+#flex{
+    display:flexbox;
+    grid-area:flex;
+    justify-self: flex-end;
+    align-self:flex-end;
+}
+input:hover{
+    outline: 50px;
+    outline-color: #d93025;
+}
+#google{
+    padding: 7px 15px 7px 15px;
+}
+#adv{
+    padding: 7px 15px 7px 15px;
+}
+#adv:hover{
+    cursor: pointer;
 }
