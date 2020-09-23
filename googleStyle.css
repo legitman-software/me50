@@ -2,8 +2,6 @@ html {
     height: 100%;
     width: 100%;
 }
-
-/*Navbar*/
 #navbar {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
@@ -17,11 +15,6 @@ a, p{
     text-decoration: none;
     color:black;
     font-size: 13px;
-}
-#adv{
-    grid-area:adv;
-    justify-self: flex-end;
-    align-self:center;
 }
 #about {
     grid-area: about;
@@ -137,4 +130,9 @@ a, p{
 }
 a:hover{
     text-decoration: underline;
+}
+#adv{
+    grid-area:adv;
+    justify-self: flex-end;
+    align-self:center;
 }
