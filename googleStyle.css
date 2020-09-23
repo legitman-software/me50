@@ -118,11 +118,11 @@ a, p{
     border-radius: 3px;
 }
 #google-search-btn:hover{
-    border: 1px solid rgb(139, 139, 139);
+    border: 1px solid rgb(118, 118, 118);
     color: black;
 }
 #random-search-btn:hover{
-    border: 1px solid rgb(139, 139, 139);
+    border: 1px solid rgb(118, 118, 118);
     color: black;
 }
 #google-text{
