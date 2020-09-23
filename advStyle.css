@@ -39,15 +39,39 @@ grid-template-areas:
 }
 #main{
     display:grid;
-    grid-template-columns: 50px 200px 500px;
+    grid-template-columns: 50px 200px 500px 500px;
     grid-template-rows: 50px 50px 50px 50px;
     margin-top: 25px;
     grid-template-areas: 
-    ". searchVar1 in1"
-    ". searchVar2 in2"
-    ". searchVar3 in3"
-    ". searchVar4 in4"
+    ". searchVar1 in1 text1"
+    ". searchVar2 in2 text2"
+    ". searchVar3 in3 text3"
+    ". searchVar4 in4 text4"
     ;
+}
+#text1{
+    grid-area:text1;
+    align-self: center;
+    margin-left: 35px;
+    font-size: 11px;
+}
+#text2{
+    grid-area:text2;
+    align-self: center;
+    margin-left: 35px;
+    font-size: 11px;
+}
+#text3{
+    grid-area:text3;
+    align-self: center;
+    margin-left: 35px;
+    font-size: 11px;
+}
+#text4{
+    grid-area:text4;
+    align-self: center;
+    margin-left: 35px;
+    font-size: 11px;
 }
 #searchVar1{
     grid-area: searchVar1;
@@ -74,24 +98,28 @@ grid-template-areas:
     height:25px;
     outline: none;
     align-self:center;
+    margin:-25px;
 }
 #in2{
     grid-area:in2;  
     height:25px;
     outline: none;
     align-self:center;
+    margin:-25px;
 }
 #in3{
     grid-area:in3;  
     height:25px;
     outline: none;
     align-self:center;
+    margin:-25px;
 }
 #in4{
     grid-area:in4;  
     height:25px;
     outline: none;
     align-self:center;
+    margin:-25px;
 }
 #buttons{
     display:grid;
@@ -106,16 +134,23 @@ grid-template-areas:
     justify-self: flex-end;
     align-self:flex-end;
 }
-input:hover{
-    outline: 50px;
-    outline-color: #d93025;
-}
 #google{
+    border:none;
+    border-radius: 5px;
     padding: 7px 15px 7px 15px;
+    color: grey;
 }
 #adv{
     padding: 7px 15px 7px 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
 }
 #adv:hover{
     cursor: pointer;
+}
+input:focus {
+    border:1px solid #4D90FE;
+    box-shadow: 0px 0px 5px  #4D90FE;
 }
