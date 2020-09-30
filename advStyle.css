@@ -144,6 +144,7 @@ grid-template-areas:
     padding: 7px 15px 7px 15px;
     font-weight: bold;
     color: white;
+    border-radius:5px;
     background-color: #4d90fe;
     border: 1px solid #3079ed;
 }
